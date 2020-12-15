@@ -5,18 +5,25 @@ function theBeatlesPlay (musicians, instruments) {
     arr.push(`${musicians[i]} plays ${instruments[n]}`)
   }
   return arr
-
 }
 
-function johnLennonFacts (strings) {
-  // return strings+'!'
+function johnLennonFacts(facts) {
+  const loudFacts = [] 
+
+  let i = 0 
+  while (i < facts.length) { 
+    loudFacts.push(`${facts[i]}!!!`)
+  }
+  return loudFacts
 }
 
-function iLoveTheBeatles (num) {
-//   if (num === 7 ) {
-//   return "I love the Beatles" * 8
-// } else if (num === 17) {
-// return ["I love the Beatles"]
-//   }
-// }
+function iLoveTheBeatles(num) {
+  const arr = []
+
+  do {
+    arr.push('I love the Beatles!')
+    n++  
+  } while (n < 15)
+  return arr
 }
+
